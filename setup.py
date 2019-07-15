@@ -20,6 +20,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 exec(open('pymldb/version.py').read())
 
 setup(
+    python_requires=">=3",
+
     name='pymldb',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
@@ -41,7 +43,7 @@ setup(
         'Development Status :: 3 - Alpha',
 
         'License :: OSI Approved :: BSD License',
-        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
 
         'Intended Audience :: Developers',
         'Topic :: Database :: Database Engines/Servers',

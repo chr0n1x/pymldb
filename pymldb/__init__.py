@@ -51,7 +51,7 @@ class Connection(object):
     @decorate_response
     def get(self, url, data=None, **kwargs):
         params = {}
-        for k, v in kwargs.iteritems():
+        for k, v in kwargs.items():
             if type(v) in [dict, list]:
                 v = json.dumps(v)
             params[str(k)] = v
